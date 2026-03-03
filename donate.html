@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Support Media Literacy Initiative</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon Link  -->
+    <link rel="icon" href="images/SMILC LOGO.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/donate.css">
+
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" role="status" aria-live="polite">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <img src="images/SMILC LOGO.png" alt="">
+                <!-- Logo will be loaded here -->
+                <!-- Fallback text if logo fails to load -->
+                <!-- <div class="logo-fallback">ML</div> -->
+            </div>
+            <div class="loading-text">Loading Media Literacy Initiative</div>
+            <div class="sr-only" aria-live="polite">Loading website content, please wait...</div>
+        </div>
+    </div>
+
+     <!-- Modern Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <!-- Logo - Left -->
+            <div class="navbar-brand">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><img src="images/SMILC LOGO.png" alt=""></div>
+                </a>
+            </div>
+
+            <!-- Navigation Links - Centered -->
+            <div class="navbar-links">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"><span>Home</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link"><span>About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link"><span>Gallery</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="activity.html" class="nav-link"><span>Activities</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="donate.html" class="nav-link active"><span>Donate</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link"> <span>Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Section - Theme Toggle & Profile -->
+            <div class="navbar-right">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+
+                <!-- Profile Section -->
+                <div class="nav-profile">
+                    <div class="profile-avatar"><img src="images/aboutus.jpg" alt=""></div>
+                    <span class="profile-name">Guest User</span>
+                    <!-- Profile Dropdown -->
+                    <div class="profile-dropdown">
+                        <a href="#profile" class="dropdown-item">
+                            <i class="fas fa-user"></i>
+                            <span>My Profile</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#login" class="dropdown-item">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <h3 class="mobile-nav-title"></h3>
+            <button class="mobile-close-btn" id="mobileCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <ul class="mobile-nav-menu">
+            <li class="mobile-nav-item">
+                <a href="index.html" class="mobile-nav-link"><i class="fas fa-home mobile-nav-icon"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="about.html" class="mobile-nav-link"><i class="fas fa-info-circle mobile-nav-icon"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="gallery.html" class="mobile-nav-link"><i class="fas fa-images mobile-nav-icon"></i>
+                    <span>Gallery</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="donate.html" class="mobile-nav-link active"><i class="fas fa-heart mobile-nav-icon"></i>
+                    <span>Donate</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="activity.html" class="mobile-nav-link"><i class="fa-solid fa-stopwatch"></i>
+                    <span>Activities</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="contact.html" class="mobile-nav-link"><i class="fas fa-envelope mobile-nav-icon"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="mobile-nav-footer">
+            <div class="mobile-profile">
+                <div class="profile-avatar"><img src="images/aboutus.jpg" alt=""></div>
+                <div>
+                    <div style="font-weight: 600; color: var(--text);">Guest User</div>
+                    <div style="font-size: 0.9rem; color: var(--text-light);">View Profile</div>
+                </div>
+            </div>
+            
+            <button class="mobile-theme-toggle" id="mobileThemeToggle">
+                <i class="fas fa-moon"></i><span>Switch to Dark Mode</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container page-header-content">
+            <div>
+                <h1>Support Our Mission</h1>
+                <p>Your donation helps us empower individuals with critical thinking skills to navigate the digital world</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Donate Section -->
+    <section class="why-donate-section">
+        <div class="container">
+            <h2>Why Your Donation Matters</h2>
+            <p class="para">Your generosity directly supports our work in underserved areas.
+                With your help, we can reach more people and make a greater impact.
+            </p>
+            <div class="why-donate-grid">
+                <div class="reason-card">
+                    <div class="reason-icon"><i class="fa-solid fa-earth-africa"></i></div>
+                    <h3>Direct Impact</h3>
+                    <p>100% of your donation goes directly to funding media literacy workshops in underserved communities, purchasing educational materials, and training new facilitators.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon"><i class="fa-solid fa-computer"></i></div>
+                    <h3>Scale Our Reach</h3>
+                    <p>Your contribution helps us expand our programs to more schools, community centers, and online platforms, reaching individuals who need these skills the most.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3>Future-Proof Society</h3>
+                    <p>By supporting media literacy education, you're investing in a future where people can discern truth from misinformation, creating a more informed and resilient society.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bank Details Section -->
+    <section class="bank-details-section">
+        <div class="container">
+            <div class="bank-details-container">
+                <div class="bank-info">
+                    <h2>Bank Transfer Details</h2>
+                    <p>You can make a direct bank transfer to our organization's account. Please use the reference "DONATION-MLI" when making your transfer.</p>
+                    
+                    <div class="bank-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Bank Name</h4>
+                                <p id="bankName">Fidelity Bank</p>
+                                <button class="copy-btn" data-copy="Fidelity Bank">
+                                    <i class="far fa-copy"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Account Name</h4>
+                                <p id="accountName">Students' Media and Information Literacy Club</p>
+                                <button class="copy-btn" data-copy="Students' Media and Information Literacy Club">
+                                    <i class="far fa-copy"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-hashtag"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Account Number</h4>
+                                <p id="accountNumber">57000859360</p>
+                                <button class="copy-btn" data-copy="57000859360">
+                                    <i class="far fa-copy"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+                        <!-- <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Swift Code</h4>
+                                <p id="swiftCode">GTBKUS33</p>
+                                <button class="copy-btn" data-copy="GTBKUS33">
+                                    <i class="far fa-copy"></i> Copy
+                                </button>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="bank-image">
+                    <img src="images/fidelity.png" alt="Bank Transfer Illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Transparency Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-container">
+                <div class="trust-icon"><i class="fa-solid fa-handshake"></i></div>
+                <h2>Trust & Transparency</h2>
+                <p>We believe in maintaining the highest standards of integrity in all our operations. While we don't publish detailed financial reports, we ensure that every donation is used effectively to advance our mission of media literacy education.</p>
+                <p>Our commitment is to be responsible stewards of your contributions, focusing on measurable impact and sustainable growth of our programs.</p>
+                
+                <div class="trust-badges">
+                    <div class="trust-badge">
+                        <div class="badge-icon"><i class="fa-solid fa-chart-area"></i></div>
+                        <div class="badge-text">
+                            <h4>Impact Focused</h4>
+                            <p>Every dollar has a purpose</p>
+                        </div>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="badge-icon"><i class="fa-solid fa-key"></i></div>
+                        <div class="badge-text">
+                            <h4>Secure Handling</h4>
+                            <p>Bank-level security for all transactions</p>
+                        </div>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="badge-icon"><i class="fa-solid fa-eye"></i></div>
+                        <div class="badge-text">
+                            <h4>Accountable</h4>
+                            <p>Regular internal audits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Need Assistance?</h2>
+                    <p>If you have any questions about making a donation, need a receipt for tax purposes, or would like to discuss corporate sponsorship opportunities, please contact our donations team.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email for Donations</h4>
+                                <p>info@smilc.org </p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Donation Helpline</h4>
+                                <p>+234 703 194 0016</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Available Hours</h4>
+                                <p>Mon-Fri: 9 AM - 5 PM EST</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-note">
+                        <h4>Important Note</h4>
+                        <p>Please allow 2-3 business days for bank transfers to be processed. You will receive a confirmation email once your donation has been received. For international transfers, additional processing time may be required.</p>
+                    </div>
+                </div>
+                <div class="bank-image2">
+                    <img src="images/callcenter.jpg" alt="Secure Donation Illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                           <img src="images/SMILC LOGO white.png" alt="">
+                        </a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1CVRcytsov/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.x.com/smilc_official" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/smilc_official" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/students-media-and-information-literacy-club/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a> -->
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="activity.html">Activities</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 Media Literacy Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/donate.js"></script>
+</body>
+</html>

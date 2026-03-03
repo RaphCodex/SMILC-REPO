@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMILC | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon Link  -->
+    <link rel="icon" href="images/SMILC LOGO.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader" role="status" aria-live="polite">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <img src="images/SMILC LOGO.png" alt="">
+                <!-- Logo will be loaded here -->
+                <!-- Fallback text if logo fails to load -->
+                <!-- <div class="logo-fallback">ML</div> -->
+            </div>
+            <div class="loading-text">Loading Media Literacy Initiative</div>
+            <div class="sr-only" aria-live="polite">Loading website content, please wait...</div>
+        </div>
+    </div>
+
+    <!-- Modern Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <!-- Logo - Left -->
+            <div class="navbar-brand">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><img src="images/SMILC LOGO.png" alt=""></div>
+                </a>
+            </div>
+
+            <!-- Navigation Links - Centered -->
+            <div class="navbar-links">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active"><span>Home</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link"><span>About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link"><span>Gallery</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="activity.html" class="nav-link"><span>Activities</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="donate.html" class="nav-link"><span>Donate</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link"> <span>Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Section - Theme Toggle & Profile -->
+            <div class="navbar-right">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+
+                <!-- Profile Section -->
+                <div class="nav-profile">
+                    <div class="profile-avatar"><img src="images/aboutus.jpg" alt=""></div>
+                    <span class="profile-name">Guest User</span>
+                    <!-- Profile Dropdown -->
+                    <div class="profile-dropdown">
+                        <a href="#profile" class="dropdown-item">
+                            <i class="fas fa-user"></i>
+                            <span>My Profile</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#login" class="dropdown-item">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <h3 class="mobile-nav-title"></h3>
+            <button class="mobile-close-btn" id="mobileCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <ul class="mobile-nav-menu">
+            <li class="mobile-nav-item">
+                <a href="index.html" class="mobile-nav-link active"><i class="fas fa-home mobile-nav-icon"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="about.html" class="mobile-nav-link"><i class="fas fa-info-circle mobile-nav-icon"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="gallery.html" class="mobile-nav-link"><i class="fas fa-images mobile-nav-icon"></i>
+                    <span>Gallery</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="donate.html" class="mobile-nav-link"><i class="fas fa-heart mobile-nav-icon"></i>
+                    <span>Donate</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="activity.html" class="mobile-nav-link"><i class="fa-solid fa-stopwatch"></i>
+                    <span>Activities</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="contact.html" class="mobile-nav-link"><i class="fas fa-envelope mobile-nav-icon"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="mobile-nav-footer">
+            <div class="mobile-profile">
+                <div class="profile-avatar"><img src="images/aboutus.jpg" alt=""></div>
+                <div>
+                    <div style="font-weight: 600; color: var(--text);">Guest User</div>
+                    <div style="font-size: 0.9rem; color: var(--text-light);">View Profile</div>
+                </div>
+            </div>
+            
+            <button class="mobile-theme-toggle" id="mobileThemeToggle">
+                <i class="fas fa-moon"></i><span>Switch to Dark Mode</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Empowering Minds in the Digital Age</h1>
+            <div class="typing-container">
+                <span class="typed-text">Critical Thinking for Digital Citizens</span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">Join us in creating a more informed and discerning society through media and information literacy education.</p>
+            <div class="hero-buttons">
+                <a href="about.html"><button class="btn btn-primary">Learn More</button></a>
+                <a href="contact.html"><button class="btn btn-secondary">Get Involved</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Our Mission</h2>
+                    <p>
+                        In 2019, the co-founders of the Students’ Media and Information Literacy Club (SMILC),
+                        Josiah and Korede, were inspired while taking the elective course POS 353: 
+                        Media and the State, taught by Professor Aituaje Irene Pogoson in the Department 
+                        of Political Science, University of Ibadan, Nigeria. Motivated by the insights gained, 
+                        they set out to promote ethical media use by providing training for individuals, particularly
+                        students and young people, on responsible and informed engagement with the media....
+                    </p>
+                   <a href="about.html"> <button class="btn btn-primary">Unfold Our Story</button></a>
+                </div>
+                <div class="about-image">
+                    <img src="images/aboutus.jpg" alt="Workshop session">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision">
+        <div class="container">
+            <h2 class="section-title">Our Mission & Vision</h2>
+            <div class="mv-grid">
+                <div class="mv-card mission">
+                    <div class="mv-icon"><i class="fa-solid fa-road"></i></div>
+                    <h3>Our Mission</h3>
+                    <p>
+                       To equip students and young people with the knowledge, 
+                       skills, and values needed for ethical, responsible, and 
+                       informed use of media through training, advocacy, and capacity-building initiatives.
+                    </p>
+                </div>
+                <div class="mv-card vision">
+                    <div class="mv-icon"><i class="fa-solid fa-binoculars"></i></div>
+                    <h3>Our Vision</h3>
+                    <p>
+                        To promote a generation of ethically conscious and media-literate citizens 
+                        who engage constructively with information and communication platforms to 
+                        drive positive societal change.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Media Literacy Section -->
+    <section class="why-mil">
+        <div class="container">
+            <h2 class="section-title">Why Media & Information Literacy Matters</h2>
+            <div class="why-content">
+                <div class="why-image">
+                    <img src="images/gallery/UI (6).jpg">
+                </div>
+                <div class="why-text">
+                    <div class="problem-point">
+                        <h4>Information Overload</h4>
+                        <p>
+                            Media and Information Literacy (MIL) is essential in today’s digital age, 
+                            where information flows rapidly across multiple platforms.
+                        </p>
+                    </div>
+                    <div class="problem-point">
+                        <h4> Misinformation Spread</h4>
+                        <p>
+                            It empowers individuals, especially students and young people, 
+                            to critically evaluate content, discern credible sources, and engage 
+                            responsibly in online and offline spaces.
+                        </p>
+                    </div>
+                    <div class="problem-point">
+                        <h4>Digital Manipulation</h4>
+                        <p>
+                            MIL promotes ethical communication, counters misinformation,
+                            and promotes informed decision-making.
+                        </p>
+                    </div>
+                    <div class="problem-point">
+                        <h4>Privacy Concerns</h4>
+                        <p>
+                            The development of these competencies will make 
+                            individuals become active and responsible participants
+                            in democratic processes and community development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshop & Events Section -->
+    <section class="workshop-events">
+        <div class="container">
+            <h2 class="section-title">Get Involved</h2>
+            <div class="we-grid">
+                <div class="we-card workshop">
+                    <div class="we-icon"><i class="fa-regular fa-calendar"></i></div>
+                    <h3>Schedule a Workshop</h3>
+                    <p>
+                        Interactive sessions on fact-checking and digital ethics.
+                    </p>
+                    <a href="contact.html"><button class="btn btn-primary">Schedule a Workshop</button></a>
+                </div>
+                <div class="we-card events">
+                    <div class="we-icon"><i class="fa-solid fa-calendar"></i></div>
+                    <h3>Upcoming Events</h3>
+                    <p>
+                        Join our webinar on AI and misinformation.
+                    </p>
+                    <a href="activity.html"><button class="btn btn-secondary">Check Our Activity</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <h2 class="section-title">Our Global Partners</h2>
+            <div class="partners-grid">
+                <div class="partner-box">
+                    <div class="partner-logo">
+                        <img src="images/MILCON.png" alt="Partner 1">
+                    </div>
+                    <p><b>MILCON</b></p>
+                </div>
+                <div class="partner-box">
+                    <div class="partner-logo">
+                        <img src="images/unesco.png" alt="Partner 2">
+                    </div>
+                    <p><b>UNESCO</b></p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                           <img src="images/SMILC LOGO white.png" alt="">
+                        </a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1CVRcytsov/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.x.com/smilc_official" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/smilc_official" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/students-media-and-information-literacy-club/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a> -->
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="activity.html">Activities</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 Media Literacy Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

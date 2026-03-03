@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities & Events - Media Literacy Initiative</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon Link  -->
+    <link rel="icon" href="images/SMILC LOGO.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/activity.css">
+</head>
+<body>
+     <!-- Preloader -->
+    <div id="preloader" role="status" aria-live="polite">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <img src="images/SMILC LOGO.png" alt="">
+                <!-- Logo will be loaded here -->
+                <!-- Fallback text if logo fails to load -->
+                <!-- <div class="logo-fallback">ML</div> -->
+            </div>
+            <div class="loading-text">Loading Media Literacy Initiative</div>
+            <div class="sr-only" aria-live="polite">Loading website content, please wait...</div>
+        </div>
+    </div>
+
+    <!-- Modern Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <!-- Logo - Left -->
+            <div class="navbar-brand">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><img src="images/SMILC LOGO.png" alt=""></div>
+                </a>
+            </div>
+
+            <!-- Navigation Links - Centered -->
+            <div class="navbar-links">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link "><span>Home</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link"><span>About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link"><span>Gallery</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="activity.html" class="nav-link active"><span>Activities</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="donate.html" class="nav-link"><span>Donate</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link"> <span>Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Section - Theme Toggle & Profile -->
+            <div class="navbar-right">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+
+                <!-- Profile Section -->
+                <div class="nav-profile">
+                    <div class="profile-avatar"><img src="images/aboutus.jpg" alt=""></div>
+                    <span class="profile-name">Guest User</span>
+                    <!-- Profile Dropdown -->
+                    <div class="profile-dropdown">
+                        <a href="#profile" class="dropdown-item">
+                            <i class="fas fa-user"></i>
+                            <span>My Profile</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#login" class="dropdown-item">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <h3 class="mobile-nav-title"></h3>
+            <button class="mobile-close-btn" id="mobileCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <ul class="mobile-nav-menu">
+            <li class="mobile-nav-item">
+                <a href="index.html" class="mobile-nav-link"><i class="fas fa-home mobile-nav-icon"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="about.html" class="mobile-nav-link"><i class="fas fa-info-circle mobile-nav-icon"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="gallery.html" class="mobile-nav-link"><i class="fas fa-images mobile-nav-icon"></i>
+                    <span>Gallery</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="donate.html" class="mobile-nav-link"><i class="fas fa-heart mobile-nav-icon"></i>
+                    <span>Donate</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="activity.html" class="mobile-nav-link active"><i class="fa-solid fa-stopwatch"></i>
+                    <span>Activities</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="contact.html" class="mobile-nav-link"><i class="fas fa-envelope mobile-nav-icon"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="mobile-nav-footer">
+            <div class="mobile-profile">
+                <div class="profile-avatar"><img src="images/aboutus.jpg" alt=""></div>
+                <div>
+                    <div style="font-weight: 600; color: var(--text);">Guest User</div>
+                    <div style="font-size: 0.9rem; color: var(--text-light);">View Profile</div>
+                </div>
+            </div>
+            
+            <button class="mobile-theme-toggle" id="mobileThemeToggle">
+                <i class="fas fa-moon"></i><span>Switch to Dark Mode</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container page-header-content">
+            <div>
+                <h1>Our Activities</h1>
+                <p>Stay updated with our workshops, seminars, and community events</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity Section -->
+    <section class="activity-section">
+        <div class="container">
+            <h2 class="section-title">Featured Event</h2>
+            <div class="activity-container">
+                <div class="activity-flyer">
+                    <img src="images/activities/Mind over AI .jpg" alt="Digital Literacy Workshop Flyer">
+                </div>
+                <div class="activity-details">
+                    <h2 class="activity-title">Minds Over AI - MIL In Digital Spaces</h2>
+                    
+                    <div class="activity-meta">
+                        <div class="meta-item">
+                            <div class="meta-icon">
+                                <i class="far fa-calendar-alt"></i>
+                            </div>
+                            <div class="meta-text">
+                                <h4>Date</h4>
+                                <p>October 25, 2025</p>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">
+                                <i class="far fa-clock"></i>
+                            </div>
+                            <div class="meta-text">
+                                <h4>Time</h4>
+                                <p>10:00 AM - 4:00 PM EST</p>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="meta-text">
+                                <h4>Location</h4>
+                                <p>Community Center, Downtown</p>
+                            </div>
+                        </div>
+                        <!-- <div class="meta-item">
+                            <div class="meta-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="meta-text">
+                                <h4>Available Seats</h4>
+                                <p>45 of 60 remaining</p>
+                            </div>
+                        </div> -->
+                    </div>
+                    
+                    <button class="btn btn-primary register-btn">
+                        <i class="fas fa-user-plus"></i> Register for This Event
+                    </button>
+                </div>
+            </div>
+            <!-- <div class="activity-description">
+                <p>Join us for an immersive one-day workshop designed to equip participants with essential skills for responsible social media usage. This hands-on session will cover topics including identifying misinformation, understanding privacy settings, and developing critical thinking skills for digital content consumption.</p>
+                <p>Our expert facilitators will guide you through practical exercises, group discussions, and real-world case studies. Whether you're a parent concerned about your child's online safety, a professional looking to enhance digital literacy, or simply someone wanting to navigate social media more effectively, this workshop is for you.</p>
+                <p>No prior technical knowledge is required. All materials will be provided. Light refreshments will be served.</p>
+            </div> -->
+        </div>
+    </section>
+    
+
+    <!-- Calendar Section -->
+    <section class="calendar-section">
+        <div class="container">
+            <h2 class="section-title">Event Calendar</h2>
+            
+            <!-- Live Time Display -->
+            <div class="live-time">
+                <div class="time-display">
+                    <div class="time-icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div class="time-text">
+                        <h3>Current Time</h3>
+                        <p id="currentTime">00:00:00</p>
+                    </div>
+                </div>
+                <div class="date-display">
+                    <p>Today is</p>
+                    <h4 id="currentDate">Saturday, November 18, 2023</h4>
+                </div>
+            </div>
+            
+            <!-- Calendar -->
+            <div class="calendar-container">
+                <div class="calendar" id="calendar">
+                    <div class="calendar-header">
+                        <div class="calendar-title" id="calendarTitle">November 2023</div>
+                        <div class="calendar-nav">
+                            <button class="nav-btn" id="prevMonth">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="nav-btn" id="todayBtn">
+                                Today
+                            </button>
+                            <button class="nav-btn" id="nextMonth">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="calendar-weekdays">
+                        <div class="weekday">Sun</div>
+                        <div class="weekday">Mon</div>
+                        <div class="weekday">Tue</div>
+                        <div class="weekday">Wed</div>
+                        <div class="weekday">Thu</div>
+                        <div class="weekday">Fri</div>
+                        <div class="weekday">Sat</div>
+                    </div>
+                    
+                    <div class="calendar-days" id="calendarDays">
+                        <!-- Calendar days will be generated by JavaScript -->
+                    </div>
+                </div>
+                
+                <!-- Legend -->
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color today"></div>
+                        <div class="legend-text">Today</div>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color event"></div>
+                        <div class="legend-text">Event Day</div>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--accent);"></div>
+                        <div class="legend-text">Dot indicates event</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                           <img src="images/SMILC LOGO white.png" alt="">
+                        </a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1CVRcytsov/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.x.com/smilc_official" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/smilc_official" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/students-media-and-information-literacy-club/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a> -->
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="activity.html">Activities</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 Media Literacy Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/activity.js"></script>
+</body>
+</html>

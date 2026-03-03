@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Media Literacy Initiative</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon Link  -->
+    <link rel="icon" href="images/SMILC LOGO.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <style>
+   
+    </style>
+</head>
+<body>
+    
+     <!-- Preloader -->
+    <div id="preloader" role="status" aria-live="polite">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <img src="images/SMILC LOGO.png" alt="">
+                <!-- Logo will be loaded here -->
+                <!-- Fallback text if logo fails to load -->
+                <!-- <div class="logo-fallback">ML</div> -->
+            </div>
+            <div class="loading-text">Loading Media Literacy Initiative</div>
+            <div class="sr-only" aria-live="polite">Loading website content, please wait...</div>
+        </div>
+    </div>
+
+   <!-- Modern Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <!-- Logo - Left -->
+            <div class="navbar-brand">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><img src="images/SMILC LOGO.png" alt=""></div>
+                </a>
+            </div>
+
+            <!-- Navigation Links - Centered -->
+            <div class="navbar-links">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"><span>Home</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link "><span>About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link active"><span>Gallery</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="activity.html" class="nav-link"><span>Activities</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="donate.html" class="nav-link"><span>Donate</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link"> <span>Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Section - Theme Toggle & Profile -->
+            <div class="navbar-right">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+
+                <!-- Profile Section -->
+                <div class="nav-profile">
+                    <div class="profile-avatar"><img src="images/aboutus.jpg" alt=""></div>
+                    <span class="profile-name">Guest User</span>
+                    <!-- Profile Dropdown -->
+                    <div class="profile-dropdown">
+                        <a href="#profile" class="dropdown-item">
+                            <i class="fas fa-user"></i>
+                            <span>My Profile</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#login" class="dropdown-item">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <h3 class="mobile-nav-title"></h3>
+            <button class="mobile-close-btn" id="mobileCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <ul class="mobile-nav-menu">
+            <li class="mobile-nav-item">
+                <a href="index.html" class="mobile-nav-link"><i class="fas fa-home mobile-nav-icon"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="about.html" class="mobile-nav-link"><i class="fas fa-info-circle mobile-nav-icon"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="gallery.html" class="mobile-nav-link active"><i class="fas fa-images mobile-nav-icon"></i>
+                    <span>Gallery</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="donate.html" class="mobile-nav-link"><i class="fas fa-heart mobile-nav-icon"></i>
+                    <span>Donate</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="activity.html" class="mobile-nav-link"><i class="fa-solid fa-stopwatch"></i>
+                    <span>Activities</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="contact.html" class="mobile-nav-link"><i class="fas fa-envelope mobile-nav-icon"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="mobile-nav-footer">
+            <div class="mobile-profile">
+                <div class="profile-avatar"><img src="images/aboutus.jpg" alt=""></div>
+                <div>
+                    <div style="font-weight: 600; color: var(--text);">Guest User</div>
+                    <div style="font-size: 0.9rem; color: var(--text-light);">View Profile</div>
+                </div>
+            </div>
+            
+            <button class="mobile-theme-toggle" id="mobileThemeToggle">
+                <i class="fas fa-moon"></i><span>Switch to Dark Mode</span>
+            </button>
+        </div>
+    </div>
+
+   
+    <!-- ========== PAGE HEADER (HERO) ========== -->
+    <section class="page-header">
+        <div class="container page-header-content">
+            <div>
+                <h1>Event Gallery</h1>
+                <p>Visual stories from our workshops, seminars, and community events</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EVENT INFO ========== -->
+    <section class="event-info-section">
+        <div class="container">
+            <div class="event-info">
+                <h1 class="event-title">Media Literacy Event 2023</h1>
+                <div class="event-location">
+                    <div><span class="location-icon"><i class="fas fa-map-marker-alt"></i></span> Ibadan, Nigeria </div>
+                    <div class="event-date"><span class="date-icon"><i class="far fa-calendar-alt"></i></span> October 12-14, 2023</div>
+                </div>
+                <div class="event-goal">
+                    <p>This three-day summit brought together educators, policymakers, and technology experts from around the world to address the growing challenges of misinformation and digital manipulation. Our goal was to develop actionable strategies for integrating media literacy into education systems, create networking opportunities for professionals in the field, and showcase innovative tools for fact-checking and digital verification.</p>
+                    <p>The summit featured 35+ speakers, 12 workshops, and 5 panel discussions focusing on critical thinking in the digital age, algorithmic transparency, and ethical digital citizenship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MOSAIC COLLAGE GALLERY ========== -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Event Highlights</h2>
+            <div class="mosaic-grid">
+                <!-- All gallery items placed statically in HTML with specific grid classes -->
+                <div class="gallery-item item1" data-index="0">
+                    <img src="images/gallery/UI (1).jpg" alt="Keynote speech" loading="lazy">
+                </div>
+                <div class="gallery-item item2" data-index="1">
+                    <img src="images/gallery/UI (2).jpg" alt="Workshop session" loading="lazy">
+                </div>
+                <div class="gallery-item item3" data-index="2">
+                    <img src="images/gallery/UI (3).jpg" alt="Panel discussion" loading="lazy">
+                </div>
+                <div class="gallery-item item4" data-index="3">
+                    <img src="images/gallery/UI (4).jpg" alt="Networking" loading="lazy">
+                </div>
+                <div class="gallery-item item5" data-index="4">
+                    <img src="images/gallery/UI (5).jpg" alt="Technology demo" loading="lazy">
+                </div>
+                <div class="gallery-item item6" data-index="5">
+                    <img src="images/gallery/UI (6).jpg" alt="Student presentations" loading="lazy">
+                </div>
+                <div class="gallery-item item7" data-index="6">
+                    <img src="images/gallery/UI (7).jpg" alt="Award ceremony" loading="lazy">
+                </div>
+                <div class="gallery-item item8" data-index="7">
+                    <img src="images/gallery/UI (7).jpg" alt="Closing remarks" loading="lazy">
+                </div>
+                <div class="gallery-item item9" data-index="8">
+                    <img src="images/gallery.jpg" alt="Group photo" loading="lazy">
+                </div>
+                <div class="gallery-item item10" data-index="9">
+                    <img src="" alt="Workshop materials" loading="lazy">
+                </div>
+                <div class="gallery-item item11" data-index="10">
+                    <img src="images/join.jpg" alt="Attendees" loading="lazy">
+                </div>
+                <div class="gallery-item item12" data-index="11">
+                    <img src="images/background2.jpg" alt="Q&A session" loading="lazy">
+                </div>
+                <div class="gallery-item item13" data-index="12">
+                    <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Exhibition booth" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== LIGHTBOX ========== -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+        <div class="lightbox-content">
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+            <div class="lightbox-counter" id="lightboxCounter"></div>
+        </div>
+        <div class="lightbox-nav">
+            <button class="lightbox-btn" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-btn" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-text" style="color:white; font-size:2rem;">MLI</div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 Media Literacy Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/gallery.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

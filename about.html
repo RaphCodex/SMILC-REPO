@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMILC | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <!-- Favicon Link  -->
+     <link rel="icon" href="images/SMILC LOGO.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+
+ <!-- Preloader -->
+    <div id="preloader" role="status" aria-live="polite">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <img src="images/SMILC LOGO.png" alt="">
+                <!-- Logo will be loaded here -->
+                <!-- Fallback text if logo fails to load -->
+                <!-- <div class="logo-fallback">ML</div> -->
+            </div>
+            <div class="loading-text">Loading Media Literacy Initiative</div>
+            <div class="sr-only" aria-live="polite">Loading website content, please wait...</div>
+        </div>
+    </div>
+
+   <!-- Modern Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <!-- Logo - Left -->
+            <div class="navbar-brand">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><img src="images/SMILC LOGO.png" alt=""></div>
+                </a>
+            </div>
+
+            <!-- Navigation Links - Centered -->
+            <div class="navbar-links">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"><span>Home</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active"><span>About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link"><span>Gallery</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="activity.html" class="nav-link"><span>Activities</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="donate.html" class="nav-link"><span>Donate</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link"> <span>Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Section - Theme Toggle & Profile -->
+            <div class="navbar-right">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+
+                <!-- Profile Section -->
+                <div class="nav-profile">
+                    <div class="profile-avatar"><img src="images/aboutus.jpg" alt=""></div>
+                    <span class="profile-name">Guest User</span>
+                    <!-- Profile Dropdown -->
+                    <div class="profile-dropdown">
+                        <a href="#profile" class="dropdown-item">
+                            <i class="fas fa-user"></i>
+                            <span>My Profile</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#login" class="dropdown-item">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <h3 class="mobile-nav-title"></h3>
+            <button class="mobile-close-btn" id="mobileCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <ul class="mobile-nav-menu">
+            <li class="mobile-nav-item">
+                <a href="index.html" class="mobile-nav-link"><i class="fas fa-home mobile-nav-icon"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="about.html" class="mobile-nav-link active"><i class="fas fa-info-circle mobile-nav-icon"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="gallery.html" class="mobile-nav-link"><i class="fas fa-images mobile-nav-icon"></i>
+                    <span>Gallery</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="donate.html" class="mobile-nav-link"><i class="fas fa-heart mobile-nav-icon"></i>
+                    <span>Donate</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="activity.html" class="mobile-nav-link"><i class="fa-solid fa-stopwatch"></i>
+                    <span>Activities</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="contact.html" class="mobile-nav-link"><i class="fas fa-envelope mobile-nav-icon"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="mobile-nav-footer">
+            <div class="mobile-profile">
+                <div class="profile-avatar"><img src="images/aboutus.jpg" alt=""></div>
+                <div>
+                    <div style="font-weight: 600; color: var(--text);">Guest User</div>
+                    <div style="font-size: 0.9rem; color: var(--text-light);">View Profile</div>
+                </div>
+            </div>
+            
+            <button class="mobile-theme-toggle" id="mobileThemeToggle">
+                <i class="fas fa-moon"></i><span>Switch to Dark Mode</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- About Us Section -->
+    <section class="about-section" id="about-us">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image-container">
+                    <div class="blob-effect">
+                        <img src="images/aboutus.jpg" alt="Our Team">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>
+                        The Students’ Media and Information Literacy Club (SMILC) is a youth-led 
+                        initiative dedicated to equipping students and young people with the knowledge, 
+                        skills, and values needed for ethical and responsible engagement with media and 
+                        information platforms.
+                    </p>
+                    <p>
+                        In 2019 at the University of Ibadan, Nigeria, SMILC emerged from a shared vision 
+                        between its co-founders, Josiah and Korede, who were inspired while taking the 
+                        course POS 353: Media and the State, taught by Professor Atuiaje Irene Pogoson 
+                        in the Department of Political Science.
+                    </p>
+                    <p>
+                        Motivated by the power of media to shape societies, they committed to helping young 
+                        people navigate today’s complex information landscape with integrity and discernment. 
+                        The first university chapter of SMILC started in December 2021 at the University of Ibadan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+   <section class="mission-vision">
+    <div class="container">
+        <h2 class="section-title">Our Mission & Vision</h2>
+        <div class="mv-grid">
+            <div class="mv-card mission">
+                <div class="mv-icon"><i class="fa-solid fa-road"></i></div>
+                <h3>Our Mission</h3>
+                <p>
+                    To equip students and young people with the knowledge, 
+                    skills, and values needed for ethical, responsible, and 
+                    informed use of media through training, advocacy, and capacity-building initiatives.
+                </p>
+            </div>
+            <div class="mv-card vision">
+                <div class="mv-icon"><i class="fa-solid fa-road"></i></div>
+                <h3>Our Vision</h3>
+                <p>
+                    To promote a generation of ethically conscious and media-literate citizens 
+                    who engage constructively with information and communication platforms to 
+                    drive positive societal change.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+     <!-- Core Values Section -->
+     <section class="core-values-section">
+        <div class="container">
+            <h2 class="section-title">Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fa-solid fa-square-check"></i></div>
+                    <h4>Integrity</h4>
+                    <p>
+                        Upholding truth and transparency in all media-related engagements.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-users"></i></div>
+                    <h4>Crtical Thinking</h4>
+                    <p>
+                        Encouraging independent, informed, and reflective judgment. 
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h4>Collabration</h4>
+                    <p>
+                        Building partnerships for greater impact.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-leaf"></i></div>
+                    <h4>Civic Engagement</h4>
+                    <p>
+                        Promoting active participation in democratic and community life
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fa-solid fa-people-arrows"></i></div>
+                    <h4>Innovation</h4>
+                    <p>
+                        Ensuring equal access to media literacy opportunities for all. 
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h4>Collaboration</h4>
+                    <p>
+                        Adopting creative approaches to teaching and applying media literacy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section class="what-we-do-section">
+        <div class="container">
+            <div class="what-we-do-content">
+                <div class="what-we-do-text">
+                    <h2>What We Do</h2>
+                    <p>
+                        We provide hands-on training, host workshops, and run advocacy campaigns to promote
+                        Media and Information Literacy (MIL) in schools, universities, and the broader community.
+                    </p>
+                    <p>
+                        Our initiatives include capacity-building programs, interactive discussions, and collaborative 
+                        projects with local and international partners. As a proud member of UNESCO’s Media and Information 
+                        Literacy Alliance, SMILC contributes to global efforts in building informed, resilient, and empowered societies.
+                    </p>
+                    <a href="contact.html"><button class="btn btn-primary">Schedule With Us</button></a>
+                </div>
+                <div class="what-we-do-image">
+                    <img src="images/gallery/UI (2).jpg" alt="What We Do">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact-section">
+        <div class="container">
+            <div class="impact-content">
+                <div class="impact-image">
+                    <img src="images/gallery/UI (1).jpg" alt="Our Impact">
+                </div>
+                <div class="impact-text">
+                    <h2>Our Impact</h2>
+                    <p>
+                        Since its inception, SMILC has reached hundreds of students and young people 
+                        through training programs, seminars, and community engagement projects. 
+                        By equipping participants with tools to identify misinformation, analyze media messages, 
+                        and use media ethically, we are cultivating informed citizens who are ready to lead change 
+                        in their communities.
+                    </p>
+                    <a href="activity.html"><button class="btn btn-secondary">View Our Activities</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is the SMILC all about?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Students' Media and Information Literacy Club (SMILC) is a student-led 
+                            initiative focused on equipping young people with the skills to critically 
+                            engage with media, identify misinformation, and responsibly use information
+                            technologies. Rooted in the principles of UNESCO’s Media and Information 
+                            Literacy (MIL) framework, the club promotes digital responsibility, 
+                            ethical communication, and informed civic participation.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is SMILC affiliated with UNESCO?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Yes. SMILC aligns with UNESCO's global Media and Information Literacy initiatives, 
+                            and our programs are designed around UNESCO’s five MIL competencies. While not a 
+                            direct subsidiary of UNESCO, we collaborate with UNESCO-inspired networks and 
+                            frameworks to promote media literacy, especially among students and young adults.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Who can join SMILC, and what are the benefits of membership?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Any student or young adult passionate about media literacy, digital safety, 
+                            critical thinking, or civic education can join SMILC. Members gain access 
+                            to exclusive trainings, workshops, outreach opportunities, and national/international 
+                            MIL events. It’s also a platform to amplify your voice on digital issues affecting your 
+                            community.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What kind of programs or activities does SMILC run?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            SMILC organizes periodic outreaches, campus campaigns, interactive colloquia, 
+                            and online awareness drives. These events cover topics such as combating fake news,
+                            digital well-being, ethical online behavior, and evaluating online sources—reaching 
+                            nearly a thousand young people in just over four years. 
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How can partnership with SMILC be achieved?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            We welcome partnerships with educational institutions, civil society groups, 
+                            and government agencies to promote media and information literacy. Interested 
+                            parties can reach out via our official social media platforms or email to initiate 
+                            collaboration on tailored MIL programs or co-hosted events..
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Team Section -->
+    <section class="join-team-section">
+        <div class="container">
+            <div class="join-team-content">
+                <h2>Join Our Team</h2>
+                <p>
+                    We're always looking for passionate, talented individuals to join our growing team. 
+                    Be part of something meaningful and make a real impact.
+                </p>
+                <a href="https://wa.me/+2347031940016?text=Hello%20Media%20Literacy%20Initiative%2C%20I%20would%20like%20to%20inquire%20about%3A" target="_blank">
+                    <button class="btn btn-primary">Make Your inquiry</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Our Management Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/management/JOSIAH.jpg" alt="Dr. Sarah Chen">
+                    </div>
+                    <div class="member-info">
+                        <h4>Josiah Obong Josiah</h4>
+                        <p>C0 Founder & Executive Director</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/management/KEREDE AJIBONA.JPG" alt="Marcus Johnson">
+                    </div>
+                    <div class="member-info">
+                        <h4>Korede Ajibona</h4>
+                        <p>Co Founder & Director of Education</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/management/ILEOHI EMMANUEL.jpg" alt="Priya Sharma">
+                    </div>
+                    <div class="member-info">
+                        <h4>Emmanuel Ugbomiekon</h4>
+                        <p>Administrative Officer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/management/AJIBONA.jpg" alt="Priya Sharma">
+                    </div>
+                    <div class="member-info">
+                        <h4>Oluwafemi Ayomide Ajibona</h4>
+                        <p>Programs Director</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/management/IFEOLUWA OGUNREMI.jpg" alt="Priya Sharma">
+                    </div>
+                    <div class="member-info">
+                        <h4>Ifeoluwa Ogunremi</h4>
+                        <p>Head Legal</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/management/OLUWASEGUN ALIU.jpg" alt="Priya Sharma">
+                    </div>
+                    <div class="member-info">
+                        <h4>Oluwaseun Aliu</h4>
+                        <p>Communications Associate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                           <img src="images/SMILC LOGO white.png" alt="">
+                        </a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1CVRcytsov/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.x.com/smilc_official" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/smilc_official" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/students-media-and-information-literacy-club/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a> -->
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="activity.html">Activities</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 Media Literacy Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Media Literacy Initiative</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon Link  -->
+    <link rel="icon" href="images/SMILC LOGO.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" role="status" aria-live="polite">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <img src="images/SMILC LOGO.png" alt="">
+                <!-- Logo will be loaded here -->
+                <!-- Fallback text if logo fails to load -->
+                <!-- <div class="logo-fallback">ML</div> -->
+            </div>
+            <div class="loading-text">Loading Media Literacy Initiative</div>
+            <div class="sr-only" aria-live="polite">Loading website content, please wait...</div>
+        </div>
+    </div>
+
+    <!-- Modern Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <!-- Logo - Left -->
+            <div class="navbar-brand">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><img src="images/SMILC LOGO.png" alt=""></div>
+                </a>
+            </div>
+
+            <!-- Navigation Links - Centered -->
+            <div class="navbar-links">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"><span>Home</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link"><span>About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link"><span>Gallery</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="activity.html" class="nav-link"><span>Activities</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="donate.html" class="nav-link"><span>Donate</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active"> <span>Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Section - Theme Toggle & Profile -->
+            <div class="navbar-right">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+
+                <!-- Profile Section -->
+                <div class="nav-profile">
+                    <div class="profile-avatar"><img src="images/aboutus.jpg" alt=""></div>
+                    <span class="profile-name">Guest User</span>
+                    <!-- Profile Dropdown -->
+                    <div class="profile-dropdown">
+                        <a href="#profile" class="dropdown-item">
+                            <i class="fas fa-user"></i>
+                            <span>My Profile</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#login" class="dropdown-item">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <h3 class="mobile-nav-title"></h3>
+            <button class="mobile-close-btn" id="mobileCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <ul class="mobile-nav-menu">
+            <li class="mobile-nav-item">
+                <a href="index.html" class="mobile-nav-link"><i class="fas fa-home mobile-nav-icon"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="about.html" class="mobile-nav-link"><i class="fas fa-info-circle mobile-nav-icon"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="gallery.html" class="mobile-nav-link"><i class="fas fa-images mobile-nav-icon"></i>
+                    <span>Gallery</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="donate.html" class="mobile-nav-link"><i class="fas fa-heart mobile-nav-icon"></i>
+                    <span>Donate</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="activity.html" class="mobile-nav-link"><i class="fa-solid fa-stopwatch"></i>
+                    <span>Activities</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="contact.html" class="mobile-nav-link active"><i class="fas fa-envelope mobile-nav-icon"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="mobile-nav-footer">
+            <div class="mobile-profile">
+                <div class="profile-avatar"><img src="images/aboutus.jpg" alt=""></div>
+                <div>
+                    <div style="font-weight: 600; color: var(--text);">Guest User</div>
+                    <div style="font-size: 0.9rem; color: var(--text-light);">View Profile</div>
+                </div>
+            </div>
+            
+            <button class="mobile-theme-toggle" id="mobileThemeToggle">
+                <i class="fas fa-moon"></i><span>Switch to Dark Mode</span>
+            </button>
+        </div>
+    </div>
+
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container page-header-content">
+            <div>
+                <h1>Contact Us</h1>
+                <p>We're here to help. Choose your preferred method to connect with our media literacy team.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="contact-methods-section">
+        <div class="container">
+            <h2 class="section-title">Connect With Us</h2>
+            
+            <div class="contact-methods-grid">
+                <!-- WhatsApp Card -->
+                <div class="contact-card whatsapp">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>For quick queries, support, or to join our media literacy community groups. Our team responds within 1-2 hours during business days.</p>
+                    
+                    <div class="contact-details">
+                        <h4>WhatsApp Number</h4>
+                        <p>+234 703 194 0016</p>
+                    </div>
+                    
+                    <a href="https://wa.me/+2347031940016?text=Hello%20Media%20Literacy%20Initiative%2C%20I%20would%20like%20to%20inquire%20about%3A" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Message on WhatsApp
+                    </a>
+                    
+                    <div class="contact-info">
+                        <p><i class="fas fa-clock info-icon"></i> Mon-Fri: 9 AM - 6 PM EST</p>
+                        <p><i class="fas fa-check-circle info-icon"></i> Typically responds within 1 hour</p>
+                    </div>
+                </div>
+
+                <!-- Email Card -->
+                <div class="contact-card email">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>For detailed inquiries, partnership proposals, or media requests. We aim to respond to all emails within 24 hours on business days.</p>
+                    
+                    <div class="contact-details">
+                        <h4>Email Address</h4>
+                        <p>info@smilc.org</p>
+                    </div>
+                    
+                    <a href="mailto:info@smilc.org?subject=Inquiry%20for%20Media%20Literacy%20Initiative&body=Hello%20MLI%20Team%2C%0A%0AI%20am%20reaching%20out%20because..." class="btn btn-primary" target="_blank">
+                        <i class="fas fa-envelope"></i> Send an Email
+                    </a>
+                    
+                    <div class="contact-info">
+                        <p><i class="fas fa-clock info-icon"></i> 24/7 - We'll respond next business day</p>
+                        <p><i class="fas fa-check-circle info-icon"></i> Responds within 24 hours</p>
+                    </div>
+                </div>
+
+                <!-- Call Card -->
+                <div class="contact-card call">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone Call</h3>
+                    <p>For urgent matters or if you prefer speaking directly with our team. Our customer care representatives are trained to assist you.</p>
+                    
+                    <div class="contact-details">
+                        <h4>Phone Number</h4>
+                        <p>+234 703 194 0016</p>
+                    </div>
+                    
+                    <a href="tel:+234 703 194 0016" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                    
+                    <div class="contact-info">
+                        <p><i class="fas fa-clock info-icon"></i> Mon-Fri: 10 AM - 5 PM EST</p>
+                        <p><i class="fas fa-check-circle info-icon"></i> Live agent available</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Hours Banner -->
+            <div class="contact-hours">
+                <h3>Our Contact Hours</h3>
+                <p>We're available to assist you during the following hours. Outside these hours, feel free to leave a message and we'll get back to you.</p>
+                
+                <div class="hours-grid">
+                    <div class="hour-item">
+                        <h4>Monday - Friday</h4>
+                        <p>9:00 AM - 6:00 PM EST</p>
+                    </div>
+                    <div class="hour-item">
+                        <h4>Saturday</h4>
+                        <p>10:00 AM - 2:00 PM EST</p>
+                    </div>
+                    <div class="hour-item">
+                        <h4>Sunday</h4>
+                        <p>Closed</p>
+                    </div>
+                    <div class="hour-item">
+                        <h4>Emergency</h4>
+                        <p>24/7 via WhatsApp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+     <footer class="main-footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                           <img src="images/SMILC LOGO white.png" alt="">
+                        </a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1CVRcytsov/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.x.com/smilc_official" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/smilc_official" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/students-media-and-information-literacy-club/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a> -->
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="activity.html">Activities</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 Media Literacy Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

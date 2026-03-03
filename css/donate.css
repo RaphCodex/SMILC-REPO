@@ -1,0 +1,472 @@
+ /* Page Header */
+ h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+.para {
+    margin-bottom: 3rem;
+}
+ .page-header {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-top: 70px;
+    background:  url('../images/donate.jpg') center/cover no-repeat;
+}
+
+.page-header-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.page-header-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0;
+    text-align: left;
+}
+
+/* Why Donate Section */
+.why-donate-section {
+    padding: 6rem 0;
+    background: var(--bg);
+}
+
+.why-donate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.reason-card {
+    background: var(--card-bg);
+    padding: 2.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: left;
+}
+
+.reason-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.reason-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--secondary);
+}
+
+.reason-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.reason-card p {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+/* Bank Details Section */
+.bank-details-section {
+    padding: 6rem 0;
+    background: var(--card-bg);
+}
+
+.bank-details-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.bank-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background: var(--card-bg);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bank-image img {
+    max-width: 400px;
+    height: 300px;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1));
+}
+.bank-image2 {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background: var(--card-bg);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bank-image2 img {
+    max-width: 550px;
+    height: 300px;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1));
+}
+
+.bank-info {
+    text-align: left;
+}
+
+.bank-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.bank-info p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.bank-details {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 10px;
+    /* box-shadow: var(--shadow); */
+    margin-top: 2rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light);
+}
+
+.detail-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.detail-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.detail-content h4 {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 0.3rem;
+}
+
+.detail-content p {
+    font-size: 1.3rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin: 0;
+}
+
+.copy-btn {
+    background: var(--light);
+    border: none;
+    color: var(--text);
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.copy-btn:hover {
+    background: var(--secondary);
+    color: white;
+}
+
+/* Trust Section */
+.trust-section {
+    padding: 6rem 0;
+    background: var(--bg);
+}
+
+.trust-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.trust-icon {
+    font-size: 4rem;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+}
+
+.trust-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.trust-container p {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.trust-badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.trust-badge {
+    background: var(--card-bg);
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: var(--transition);
+}
+
+.trust-badge:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.badge-icon {
+    font-size: 2rem;
+    color: var(--secondary);
+}
+
+.badge-text h4 {
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin-bottom: 0.3rem;
+}
+
+.badge-text p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 6rem 0;
+    background: var(--card-bg);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.contact-info p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.contact-methods {
+    margin-top: 2rem;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.contact-details h4 {
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin-bottom: 0.3rem;
+}
+
+.contact-details p {
+    color: var(--text-light);
+    margin: 0;
+    font-size: 1rem;
+}
+
+.contact-note {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-top: 2rem;
+    border-left: 4px solid var(--accent);
+}
+
+.contact-note h4 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.contact-note p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .bank-image {
+        order: 2;
+        height: auto;
+    }
+}
+@media (max-width: 992px) {
+    .why-donate-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .bank-details-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .page-header-content h1 {
+        font-size: 2.8rem;
+    }
+    
+    .bank-image {
+        order: 2;
+        height: 300px;
+    }
+    
+    .bank-info {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links, .theme-toggle {
+        display: none;
+    }
+    .bank-image {
+        order: 2;
+        height: 300px;
+        width: 100%;
+    }
+    
+    .mobile-menu {
+        display: flex;
+    }
+    
+    .page-header-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .why-donate-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .trust-badges {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    .bank-info h2,
+    .contact-info h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header {
+        height: 40vh;
+    }
+    
+    .bank-details,
+    .reason-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .detail-icon {
+        margin-bottom: 1rem;
+    }
+    
+    .contact-method {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .contact-icon {
+        margin-bottom: 1rem;
+    }
+    
+    .copy-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .trust-icon {
+        font-size: 3rem;
+    }
+    
+    .trust-container h2 {
+        font-size: 1.8rem;
+    }
+}
