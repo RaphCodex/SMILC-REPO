@@ -29,6 +29,7 @@
         .activity-section {
             padding: 6rem 0 4rem;
             background: var(--bg);
+            scroll-margin-top: 100px;
         }
 
         .activity-container {
